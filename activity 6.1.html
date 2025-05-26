@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+	<p id="1"></p>
+	
+	<button type="button" onclick="myFunction()">DT</button>
+	
+	
+	<script>
+		document.getElementById('1').innerHTML = "Date and Time";
+	</script>
+	
+	<script>
+		function myFunction() {
+			document.getElementById('1').innerHTML = Date();
+		}
+	</script>
+	
+	
+	<br>
+	<br>
+	
+	First Name: &nbsp <input type="text" id="myTxt1"> <br>
+	
+	Middle Name: &nbsp <input type="text" id="myTxt2"> <br>
+	
+	Last Name: &nbsp <input type="text" id="myTxt3"> <br>
+	
+	<input type="button" value="Complete Name" onclick="getFromText()">
+	
+	<h5 id="give1"></h5>
+	
+	
+	<script>
+		function getFromText() {
+		let a = document.getElementById('myTxt1').value;
+		let b = document.getElementById('myTxt2').value;
+		let c = document.getElementById('myTxt3').value;
+		
+		document.getElementById('give1').innerHTML = a + " " + b + " " + c;
+		}
+	</script>
+
+</body>
+
+</html>
